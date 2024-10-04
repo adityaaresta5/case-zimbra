@@ -1,0 +1,9 @@
+change 
+zmprov mcf  zimbraMtaLmtpHostLookup native
+
+before
+zmprov mcf  zimbraMtaLmtpHostLookup dns
+
+change /etc/dnsmasq.conf
+
+nameserver = ke ip lokal sendiri
