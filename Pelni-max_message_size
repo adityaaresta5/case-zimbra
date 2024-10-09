@@ -1,0 +1,5 @@
+// Cek Existing
+postconf message_size_limit
+
+// Rubah Seperti Berikut
+postconf -e message_size_limit=36700160
