@@ -1,10 +1,10 @@
 A). Install the ldap+mailbox+LDS on the first node.
 
-- When you set the license option:
+// When you set the license option:
 
 **25) License Activation:                      UNSET
 
-- You need to choose the 2nd option:
+// You need to choose the 2nd option:
 
 1) Activate license with installation
 2) Activate license after installation
@@ -12,7 +12,7 @@ A). Install the ldap+mailbox+LDS on the first node.
 
 B). Install the 2nd node. Proxy+MTA+LDS.
 
-- when the installation gets complete, install the license package manually on the 2nd node.
+// when the installation gets complete, install the license package manually on the 2nd node.
 
 or Ubuntu, execute the command as root user:
 
@@ -20,7 +20,8 @@ apt-get install zimbra-license-daemon
 For RHEL, execute the command as root user:
 
 yum install zimbra-license-daemon
-- Enable the license service and re-start the LDS service:
+
+// Enable the license service and re-start the LDS service:
 
 su - zimbra
 zmprov ms `zmhostname` +zimbraServiceEnabled license-daemon
@@ -33,7 +34,7 @@ su - zimbra
 zmprov ms `zmhostname` -zimbraServiceEnabled license-daemon
 zmcontrol restart
 
-- Remove the LDS package:
+// Remove the LDS package:
 
 apt remove zimbra-license-daemon
 
